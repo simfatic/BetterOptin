@@ -129,7 +129,7 @@ function wpbo_copyright( $text ) {
 		return $text;
 	}
 
-	return sprintf( __( '<a %s>BetterOptin</a> was made with &#10084; by <a %s>ThemeAvenue</a>.', 'betteroptin' ), 'href="https://betteropt.in" target="_blank"', 'href="https://themeavenue.net" target="_blank"' );
+	return sprintf( __( '<a %s>BetterOptin</a> was made with &#10084; by <a %s>ThemeAvenue</a>.', 'betteroptin' ), 'href="https://betteropt.in/?utm_source=internal&utm_medium=footer_text&utm_campaign=plugin" target="_blank"', 'href="https://themeavenue.net/?utm_source=plugin&utm_medium=footer_text&utm_campaign=betteroptin" target="_blank"' );
 }
 
 add_action( 'plugins_loaded', 'wpbo_remote_notices', 11 );

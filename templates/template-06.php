@@ -5,7 +5,7 @@
 			<div class="wpbo-inner">
 				<p class="wpbo-lead" data-editable='["color","fontFamily","fontSize","textEdit","textAlign"]'>Good design means never having to say “Click Here.”</p>
 				<p data-editable='["color","fontFamily","fontSize","tinymce","textAlign"]'>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-				<img src="<?php echo WPBO_URL; ?>public/assets/images/signature-small.png" alt="" data-editable='["img"]'>
+				<img src="<?php echo WPBO_URL; ?>assets/public/images/signature-small.png" alt="" data-editable='["img"]'>
 			</div>
 		</div>
 		<div class="wpbo-col wpbo-col-2" style="background-color: #d35400; color: white;" data-editable='["backgroundColor","color"]'>

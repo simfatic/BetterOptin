@@ -75,13 +75,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<img src="<?php echo WPBO_URL; ?>admin/assets/images/about-exit-intent.png" alt="">
+				<img src="<?php echo WPBO_URL; ?>assets/admin/images/about-exit-intent.png" alt="">
 				<h4>Why is the "Exit-Intent" behavior innovative?</h4>
 				<p>Did you ever feel frustrated when a website threw an opt-in popup right at you? Of course you did! Do you want your visitors to feel the same way and leave your site? Probably not.</p>
 				<p>BetterOptin solves this frustrating behavior by prompting visitors when they are about to leave.</p>
 			</div>
 			<div class="col">
-				<img src="<?php echo WPBO_URL; ?>admin/assets/images/about-visual-editor.png" alt="">
+				<img src="<?php echo WPBO_URL; ?>assets/admin/images/about-visual-editor.png" alt="">
 				<h4>Flexible &amp; Powerful Visual Editor</h4>
 				<p>Our visual editor is super easy to use. Simply hover an element to see if it is editable, then click it to edit. A sidebar will slide-in, allowing you to change colors, fonts, images, backgrounds and content.</p>
 				<p>Be creative! You know your audience, so design stunning opt-in popups that match your visitors expectations.</p>
@@ -94,13 +94,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<img src="<?php echo WPBO_URL; ?>admin/assets/images/about-targeted-campaigns.png">
+				<img src="<?php echo WPBO_URL; ?>assets/admin/images/about-targeted-campaigns.png">
 				<h4>Targeted Campaigns</h4>
 				<p>As a marketer, you know that the more precise the offer is, the better it converts. BetterOptin allows you to do exactly this: associate a popup to individual pages, posts or any custom post type (for instance if you have a custom post type "product").</p>
 				<p>Capture your leads into targeted MailChimp lists or into WordPress.</p>
 			</div>
 			<div class="col">
-				<img src="<?php echo WPBO_URL; ?>admin/assets/images/about-analytics.png">
+				<img src="<?php echo WPBO_URL; ?>assets/admin/images/about-analytics.png">
 				<h4>Valuable Insights</h4>
 				<p>Our built-in analytics allows to quicky visualize conversion rates. You can also see which popup is converting best so you can refine your strategy.</p>
 				<p>We will also be showing you referral pages soon so that you can figure out which page works best.</p>
@@ -138,7 +138,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<img src="<?php echo WPBO_URL; ?>admin/assets/images/logo-transparent-black.png" widht="280" height="27" alt="ThemeAvenue">
+				<img src="<?php echo WPBO_URL; ?>assets/admin/images/logo-transparent-black.png" widht="280" height="27" alt="ThemeAvenue">
 				<h3>Want to hear more about ThemeAvenue?</h3>
 				<p><a href="http://themeavenue.net/" target="_blank">ThemeAvenue</a> is a premium WordPress themes and plugins development company. Feel free to check our <a href="http://codecanyon.net/user/themeavenue"></a>portfolio on CodeCanyon and visit our <a href="http://support.themeavenue.net/">support site</a> if you need assistance with our products.</p>
 				<!-- Facebook Page Plugin | https://developers.facebook.com/docs/plugins/page-plugin -->

@@ -10,7 +10,7 @@ var less = require('gulp-less');
 var stripDebug = require('gulp-strip-debug');
 
 gulp.task('styles', function () {
-	gulp.src(['public/assets/css/**/*.less'])
+	gulp.src(['assets/public/css/**/*.less'])
 		.pipe(plumber({
 			errorHandler: function (error) {
 				console.log(error.message);
@@ -21,12 +21,12 @@ gulp.task('styles', function () {
 		.pipe(postcss([autoprefixer({
 			browsers: ['last 2 versions']
 		})]))
-		.pipe(gulp.dest('public/assets/css/'))
+		.pipe(gulp.dest('assets/public/css/'))
 		.pipe(minifycss({
 			keepSpecialComments: false
 		}))
-		.pipe(gulp.dest('public/assets/css/'))
-	gulp.src(['admin/assets/css/admin.less'])
+		.pipe(gulp.dest('assets/public/css/'))
+	gulp.src(['assets/admin/css/admin.less'])
 		.pipe(plumber({
 			errorHandler: function (error) {
 				console.log(error.message);
@@ -37,12 +37,12 @@ gulp.task('styles', function () {
 		.pipe(postcss([autoprefixer({
 			browsers: ['last 2 versions']
 		})]))
-		.pipe(gulp.dest('admin/assets/css/'))
+		.pipe(gulp.dest('assets/admin/css/'))
 		.pipe(minifycss({
 			keepSpecialComments: false
 		}))
-		.pipe(gulp.dest('admin/assets/css/'))
-	gulp.src(['admin/assets/css/ta-editor.less'])
+		.pipe(gulp.dest('assets/admin/css/'))
+	gulp.src(['assets/admin/css/ta-editor.less'])
 		.pipe(plumber({
 			errorHandler: function (error) {
 				console.log(error.message);
@@ -53,11 +53,11 @@ gulp.task('styles', function () {
 		.pipe(postcss([autoprefixer({
 			browsers: ['last 2 versions']
 		})]))
-		.pipe(gulp.dest('admin/assets/css/'))
+		.pipe(gulp.dest('assets/admin/css/'))
 		.pipe(minifycss({
 			keepSpecialComments: false
 		}))
-		.pipe(gulp.dest('admin/assets/css/'))
+		.pipe(gulp.dest('assets/admin/css/'))
 });
 
 gulp.task('scripts', function () {
@@ -65,8 +65,8 @@ gulp.task('scripts', function () {
 			'./bower_components/easyModal.js/jquery.easyModal.js',
 			'./bower_components/jquery.cookie/jquery.cookie.js',
 			'./bower_components/matchHeight/jquery.matchHeight.js',
-			'./public/assets/js/**/*.js',
-			'!./public/assets/js/**/*min.js'
+			'./assets/public/js/**/*.js',
+			'!./assets/public/js/**/*min.js'
 		])
 		.pipe(plumber({
 			errorHandler: function (error) {
@@ -77,13 +77,13 @@ gulp.task('scripts', function () {
 		// .pipe(jshint())
 		// .pipe(jshint.reporter('default'))
 		.pipe(concat('betterOptin.min.js'))
-		.pipe(gulp.dest('public/assets/js/'))
+		.pipe(gulp.dest('assets/public/js/'))
 		.pipe(stripDebug())
 		.pipe(uglify())
-		.pipe(gulp.dest('public/assets/js/'))
+		.pipe(gulp.dest('assets/public/js/'))
 });
 
 gulp.task('default', function () {
-	gulp.watch('public/assets/css/**/*.less', ['styles']);
-	gulp.watch('public/assets/js/**/*.js', ['scripts']);
+	gulp.watch('assets/public/css/**/*.less', ['styles']);
+	gulp.watch('assets/public/js/**/*.js', ['scripts']);
 });

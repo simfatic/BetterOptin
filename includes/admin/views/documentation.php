@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo WPBO_URL; ?>admin/assets/css/part-documentation.css">
+<link rel="stylesheet" type="text/css" href="<?php echo WPBO_URL; ?>assets/admin/css/part-documentation.css">
 <div class="wrap about-wrap">
 
 	<h1>Documentation</h1>
@@ -14,8 +14,8 @@
 		<div id="ta-doc-content">Fetching documentation... Please wait. <img src="<?php echo admin_url(); ?>/images/spinner-2x.gif" class="ta-doc-loading-img" alt="Loading..."></div>
 	</div>
 
-	<script type="text/javascript" src="<?php echo WPBO_URL; ?>admin/assets/js/vendor/jquery.toc.js"></script>
-	<script type="text/javascript" src="<?php echo WPBO_URL; ?>admin/assets/js/vendor/jquery.smooth-scroll.js"></script>
-	<script type="text/javascript" src="<?php echo WPBO_URL; ?>admin/assets/js/part-documentation.js"></script>
+	<script type="text/javascript" src="<?php echo WPBO_URL; ?>assets/admin/js/vendor/jquery.toc.js"></script>
+	<script type="text/javascript" src="<?php echo WPBO_URL; ?>assets/admin/js/vendor/jquery.smooth-scroll.js"></script>
+	<script type="text/javascript" src="<?php echo WPBO_URL; ?>assets/admin/js/part-documentation.js"></script>
 
 </div>

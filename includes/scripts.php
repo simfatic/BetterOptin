@@ -92,7 +92,7 @@ add_action( 'admin_enqueue_scripts', 'wpbo_enqueue_admin_styles' );
  */
 function wpbo_enqueue_admin_styles() {
 
-	global $post, $current_screen;
+	global $current_screen;
 
 	wp_register_style( 'wpbo-admin', WPBO_URL . 'assets/css/admin.css', array(), WPBO_VERSION );
 	wp_register_style( 'wpbo-admin-chosen', WPBO_URL . 'bower_components/chosen_v1.1.0/chosen.min.css', array(), WPBO_VERSION );
@@ -139,7 +139,7 @@ add_action( 'admin_enqueue_scripts', 'wpbo_enqueue_admin_scripts' );
  */
 function wpbo_enqueue_admin_scripts() {
 
-	global $post, $current_screen;
+	global $current_screen;
 
 	wp_register_script( 'wpbo-admin', WPBO_URL . 'assets/js/admin.js', array( 'jquery' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-chosen', WPBO_URL . 'bower_components/chosen_v1.1.0/chosen.jquery.min.js', array( 'jquery' ), WPBO_VERSION );

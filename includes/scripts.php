@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts', 'wpbo_enqueue_styles' );
  */
 function wpbo_enqueue_styles() {
 
-	wp_register_script( 'wpbo-main', WPBO_URL . 'public/assets/css/betteroptin.css', array(), WPBO_VERSION );
+	wp_register_script( 'wpbo-main', WPBO_URL . 'assets/css/betteroptin.css', array(), WPBO_VERSION );
 
 	if ( is_admin() ) {
 		return;
@@ -51,7 +51,7 @@ function wpbo_enqueue_scripts() {
 		return;
 	}
 
-	wp_register_script( 'wpbo-script', WPBO_URL . 'assets/public/js/betterOptin.min.js', array( 'jquery' ), WPBO_VERSION );
+	wp_register_script( 'wpbo-script', WPBO_URL . 'assets/js/betterOptin.min.js', array( 'jquery' ), WPBO_VERSION );
 
 	$settings = get_post_meta( wpbo_page_has_popup(), '_wpbo_settings', true );
 
@@ -94,10 +94,10 @@ function wpbo_enqueue_admin_styles() {
 
 	global $post, $current_screen;
 
-	wp_register_style( 'wpbo-admin', WPBO_URL . 'assets/admin/css/admin.css', array(), WPBO_VERSION );
+	wp_register_style( 'wpbo-admin', WPBO_URL . 'assets/css/admin.css', array(), WPBO_VERSION );
 	wp_register_style( 'wpbo-admin-chosen', WPBO_URL . 'bower_components/chosen_v1.1.0/chosen.min.css', array(), WPBO_VERSION );
-	wp_register_style( 'wpbo-editor', WPBO_URL . 'assets/admin/css/ta-editor.css', array(), WPBO_VERSION );
-	wp_register_style( 'wpbo-main', WPBO_URL . 'assets/public/css/betteroptin.css', array(), WPBO_VERSION );
+	wp_register_style( 'wpbo-editor', WPBO_URL . 'assets/css/ta-editor.css', array(), WPBO_VERSION );
+	wp_register_style( 'wpbo-main', WPBO_URL . 'assets/css/betteroptin.css', array(), WPBO_VERSION );
 	wp_register_style( 'wpbo-dataTables', '//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.1/css/jquery.dataTables.min.css', array(), WPBO_VERSION );
 	wp_register_style( 'wpbo-circliful', WPBO_URL . 'bower_components/circliful/css/jquery.circliful.css', array(), WPBO_VERSION );
 
@@ -141,9 +141,9 @@ function wpbo_enqueue_admin_scripts() {
 
 	global $post, $current_screen;
 
-	wp_register_script( 'wpbo-admin', WPBO_URL . 'assets/admin/js/admin.js', array( 'jquery' ), WPBO_VERSION );
+	wp_register_script( 'wpbo-admin', WPBO_URL . 'assets/js/admin.js', array( 'jquery' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-chosen', WPBO_URL . 'bower_components/chosen_v1.1.0/chosen.jquery.min.js', array( 'jquery' ), WPBO_VERSION );
-	wp_register_script( 'wpbo-admin-script', WPBO_URL . 'assets/admin/js/ta-live-editor.js', array( 'jquery', 'wp-color-picker' ), WPBO_VERSION );
+	wp_register_script( 'wpbo-admin-script', WPBO_URL . 'assets/js/ta-live-editor.js', array( 'jquery', 'wp-color-picker' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-autosize', WPBO_URL . 'bower_components/jquery-autosize/jquery.autosize.min.js', array( 'jquery' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-matchHeight', WPBO_URL . 'bower_components/matchHeight/jquery.matchHeight-min.js', array( 'jquery' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-dataTables', '//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.1/js/jquery.dataTables.min.js', array( 'jquery' ), WPBO_VERSION );
@@ -151,7 +151,7 @@ function wpbo_enqueue_admin_scripts() {
 	wp_register_script( 'wpbo-admin-flot-time', WPBO_URL . 'bower_components/flot/jquery.flot.time.js', array( 'jquery' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-flot-tooltip', WPBO_URL . 'bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js', array( 'jquery' ), WPBO_VERSION );
 	wp_register_script( 'wpbo-admin-circliful', WPBO_URL . 'bower_components/circliful/js/jquery.circliful.min.js', array( 'jquery' ), WPBO_VERSION );
-	wp_register_script( 'wpbo-admin-analytics', WPBO_URL . 'assets/admin/js/part-analytics.js', array( 'jquery' ), WPBO_VERSION );
+	wp_register_script( 'wpbo-admin-analytics', WPBO_URL . 'assets/js/part-analytics.js', array( 'jquery' ), WPBO_VERSION );
 
 	if ( wpbo_is_plugin_page() ) {
 
